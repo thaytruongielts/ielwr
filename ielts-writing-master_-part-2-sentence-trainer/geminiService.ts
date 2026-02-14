@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { WritingTask, EssaySection, Feedback } from "./types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const SYSTEM_CONTEXT = `
 You are an IELTS Writing Task 2 expert. You have a database of 10 high-quality essays covering:
